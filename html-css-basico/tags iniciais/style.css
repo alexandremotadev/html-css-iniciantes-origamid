@@ -1,0 +1,13 @@
+body {
+  background-color: gold;
+}
+
+/* vai selecionar a dentro do body dentro do html*/
+html body a { 
+  color: black;
+  text-decoration: none;
+}
+
+/* .logo = class
+#logo = id
+*/
