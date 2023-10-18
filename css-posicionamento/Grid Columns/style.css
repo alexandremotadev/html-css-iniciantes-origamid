@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+.comprar {
+  background: #a8f;
+  color: #103;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.item {
+  /* display grid dentro do item serve para a div virar um grid. Cada bloco de produto virou um grid internamente. */
+  background: #f7f7f7;
+  border: 1px solid #e7e7e7;  
+  padding: 20px;
+  border-radius: 4px;
+  display: grid;  
+}
+
+.grid {
+  /* - grid-template-columns: definir numero e tamanho de colunas. 1fr (unidade fracionária) distribui espaço que sobra para ambos elementos (distribui de forma igual). Se o primeiro for 1fr e o segundo 2fr, a segunda coluna terá o dobro do tamanho da primeira
+  - gap: separar elementos, margem para todos os lados */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}

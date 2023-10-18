@@ -1,0 +1,18 @@
+div {
+  /* - position relative no span não precisa preencher position na div
+  Ao definir position relative na div, o elemento position absolute do span, vai ficar 20px acima do elemento pai dele*/
+  border: 2px solid #ccc;
+  margin-top: 40px;
+  padding: 20px 20px 40px 20px;
+  position: relative;
+}
+
+span {
+  /* position relative e position absolute, serve para posicionar elementos acima ou abaixo da borda */ 
+  background: #e7e7e7;
+  border: 2px solid #ccc;
+  padding: 10px;
+  position: absolute;
+  top: -20px;  
+}
+

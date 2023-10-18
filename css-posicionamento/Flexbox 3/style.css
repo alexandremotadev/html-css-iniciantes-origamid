@@ -1,0 +1,33 @@
+.flex {
+  /* display flex: um elemento do lado do outro
+  flex-wrap wrap: escrevendo wrap no flex wrap define se deve quebrar em nova linha ou não, quando a tela diminui 
+  place-content: é a união do justify e align
+  100vh: height tem 100% da altura da tela
+  */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;  
+}
+
+body {
+  margin: 0px;
+}
+
+h2 {
+  /* flex 1: união do flex grow = 1, flex shrink = 1 e flex basis = 0% 
+  com o flex ativo não tem como justificar porque não sobra espaço em branco*/
+  background: #e7e7e7;
+  border: 1px solid #d7d7d7;
+  padding: 20px;
+  margin: 0px;
+}
+
+.grid {
+  /* - grid-template-columns repeat: vai criando mais colunas se der pra criar
+  - auto-fit tente encaixar quantos itens forem possíveis, só funciona se tiver valor fixo. se diminui tela ele diminui numero de colunas, se aumenta tela ele aumenta numero de colunas
+  - minmax: valor minimo e valor maximo de cada coluna*/
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  gap: 20px;
+}

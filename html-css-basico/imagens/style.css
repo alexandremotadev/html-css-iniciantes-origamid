@@ -1,0 +1,14 @@
+img {
+  /* - max width 100%: garante que imagem não estoure o elemento pai saindo da margem nem perdendo resolução, que neste caso é o body
+  - display block: exclui divisão de 4px entre imagens
+ - width 500px: somente para testar a perda de resolução entre svg x png
+ - Não usar imagens maiores que 1mb  
+  */
+  max-width: 100%;
+  display: block;
+  width: 500px;
+}
+
+div {
+
+}

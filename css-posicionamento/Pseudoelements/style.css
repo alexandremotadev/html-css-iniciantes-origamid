@@ -1,0 +1,33 @@
+/* Incluiu elemento depois do h1 "nossos produtos" */
+
+h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #caf;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* estilização bolinha roxa 
+before = inclui elemento antes da li
+after = inclui elemento depois da li */
+li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(#caf, #fff);
+  border: 2px solid #caf;
+  margin-right: 10px;
+  border-radius: 50%;
+}

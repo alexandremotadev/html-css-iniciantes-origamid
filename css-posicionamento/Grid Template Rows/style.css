@@ -1,0 +1,64 @@
+.grid {
+  /* grid-template-columns: repeat repetir 2x vezes o 1fr (1fr coluna 1 e 1fr coluna 2) */
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.titulo {
+  /* grid-column: titulo ocupar de ponta a ponta */
+  grid-column: 1 / -1;
+}
+
+.info {
+  /* place-self: posicionar div 
+  place-items: posicionar itens dentro da div 
+  gap: espaçamento*/
+  place-self: start;
+  display: grid;
+  place-items: start; 
+  gap: 20px;
+}
+
+
+/* Estilos Gerais */ 
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 40px;
+}
+
+h1, p {
+  margin: 0px;
+}
+
+h1 {
+  /* - line-height: diminui espaçamento entre linha caso Stark fique embaixo do h1 */
+  font-size: 48px;
+  line-height: 1;
+}
+
+p, span {
+  font-size: 20px;
+}
+
+img {
+  /* imagem se expandir no máximo a 100% do tamanho do conteiner*/
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.comprar {
+  background: #a8f;
+  color: #103;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.preco {
+  background: #ddd;
+  padding: 5px 10px;
+  border-radius: 4px;
+}

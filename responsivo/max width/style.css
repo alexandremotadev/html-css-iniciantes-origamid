@@ -1,0 +1,26 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 960px; /* evitar que a imagem cresça ao aumentar a tela */
+  margin: 100px auto; /* criar margem em todos os lados para centralizar o conteúdo ao aumentar a tela*/
+}
+
+.cover img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.texto {
+  align-self: center; /* alinhar texto ao centro da imagem */
+}
+
+p {
+  max-width: 60ch; /* largura máxima ao aumentar a tela. 60ch = 60 números 0 lado a lado de largura */
+}

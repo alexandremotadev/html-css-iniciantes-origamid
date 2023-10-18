@@ -1,0 +1,12 @@
+span {
+  display: inline-block;
+  background: #ddd;
+}
+
+span {
+  /* top, right, bottom, left */
+  padding: 30px;
+  margin: 20px 40px;
+  padding: 40px 100px 200px 10px;
+  border: 10px solid black;
+}
