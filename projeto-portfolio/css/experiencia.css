@@ -1,0 +1,88 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px
+}
+
+/* altera somente o subtitulo dentro de experiencia */
+.experiencia .subtitulo {
+  color: #e0e0e0;
+}
+
+.experiencia-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch; /* não expandir o texto ao aumentar a tela*/
+  margin-bottom: 60px;
+  color: #525252;
+}
+
+/* preto máximo no strong */
+.experiencia-texto strong {
+  color: #141414;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative; /* posicionar ano fora da div, porque empresa-ano está dentro da empresa */
+  gap: 10px 20px; /* 10px na vertical e 20px na horizontal */  
+}
+
+/* posicionar empresa-ano fora da div */
+.empresa-ano {
+  position: absolute;
+  top: 22px;
+  left: -100px;
+  color: #525252;
+  font-size: 0.875rem;
+  /* text-align, width e aumentar px do top para 22px para alinhar ano à direita*/
+  text-align: right;
+  width: 80px;
+}
+
+/* adicionar detalhe na lateral da empresa */
+.empresa::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute; /* retirar detalhe de dentro da div. sem esse position ele ocupa a primeira linha da primeira coluna e joga o titulo para a primeira linha segunda coluna */
+  top: 20px; /* 20px porque o padding top da div é 20px */
+  left: -4px;
+}
+
+.empresa-titulo {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 1.4;
+}
+
+.empresa-habilidades {
+  display: flex; /* um item do lado do outro */
+  flex-wrap: wrap; /* quebrar caso não caiba todos os itens um do lado do outro */
+  gap: 10px;
+  align-content: start; /* alinhar ao inicio */
+}
+
+.empresa-habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 5px 10px;
+}

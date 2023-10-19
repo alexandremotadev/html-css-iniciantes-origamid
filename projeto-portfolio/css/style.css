@@ -1,4 +1,5 @@
 /* importar partes separadas do css */
 @import './global.css';
 @import './header.css';
-@import './introducao.css';  
+@import './introducao.css';
+@import './experiencia.css';

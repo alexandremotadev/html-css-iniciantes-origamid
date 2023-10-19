@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
 /* Reset de estilos, modificação do body e reutilização de classes*/
 body {
   font-family: 'Fira Sans', Arial, sans-serif;
   margin: 0px;
   color: #141414;
+  margin-bottom: 1000px; /* temporario */
 }
 
 h1, h2, h3, p {
@@ -18,6 +21,15 @@ ul {
 img {
   max-width: 100%;
   display: block;
+}
+
+/* subtitulo é uma classe que vou reaproveitar, por isso está no global*/
+.subtitulo {
+  font-size: 8rem;
+  word-break: break-all; /* quebrar palavra */
+  line-height: 1; /* altura da linha */
+  text-transform: uppercase; /* letra maiuscula */
+  max-width: 4ch; /* valor do caractere 0 = vai tentar quebrar palavra deixando 4 letras em cada linha */
 }
 
 
