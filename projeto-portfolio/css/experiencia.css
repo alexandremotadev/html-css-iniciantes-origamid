@@ -86,3 +86,28 @@
   background: #ffffff;
   padding: 5px 10px;
 }
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+  .empresa-ano {
+    position: initial; /* volta para posição inicial, fazendo parte de dentro da div */
+    order: 1; /* definido como primeiro elemento da div, mas como os outros elementos não tem ordem definida, ficam com order 0. Logo, o ano é posicionado depois de todos os elementos */
+    width: initial; /* não coloca mais os 100px */
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}
