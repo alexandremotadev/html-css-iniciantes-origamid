@@ -5,7 +5,6 @@ body {
   font-family: 'Fira Sans', Arial, sans-serif;
   margin: 0px;
   color: #141414;
-  margin-bottom: 1000px; /* temporario */
 }
 
 h1, h2, h3, p {
@@ -21,6 +20,7 @@ ul {
 img {
   max-width: 100%;
   display: block;
+  height: auto; /* definido automaticamente de acordo com o valor da largura, não esmagando a imagem */
 }
 
 /* subtitulo é uma classe que vou reaproveitar, por isso está no global*/
@@ -36,7 +36,8 @@ img {
   .subtitulo {
     font-size: 3rem;
     text-transform: capitalize; /* aumenta somente a primeira letra*/
-    max-width: initial;
+    max-width: initial !important;
+    /* !important serve para escrever sobre qualquer valor que vier na frente, em outros arquivos css*/
   }
 
 }
