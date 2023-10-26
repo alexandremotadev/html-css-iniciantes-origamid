@@ -39,9 +39,17 @@
 @media (max-width: 800px) {
   .footer-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 40px;       
   }
   .footer-contato li {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .footer-texto {
+    font-size: 1.25rem;
   }
 }
+
+.footer-redes-sociais{  
+  display: flex;
+  gap: 20px;
+ }
