@@ -1,0 +1,17 @@
+:root {
+  --roxo: #84e;
+  --borda: 2px solid blue;
+  --fonte-grande: 3rem;
+}
+
+h1 {
+  color: var(--roxo);
+  font-size:var(--fonte-grande);
+}
+
+p {
+  --roxo: #222; /* esse elemento passa a utilizar o roxo como esse valor */
+  color: var(--roxo);
+  border: var(--borda);
+  font-size: calc(var(--fonte-grande) / 2);
+}

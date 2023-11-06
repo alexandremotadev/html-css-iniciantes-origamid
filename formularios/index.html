@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="./"></form>
+  <label for="nome">Nome</label> <!-- funciona por padrão como elemento inline -->
+  <input type="text" id="nome" name="nomes"> <!-- funciona por padrão como elemento inline block. id do input tem que ser o mesmo que consta em for do label -->
+
+  <label for="senha">Senha</label>
+  <input type="password" id="senha" name="senhas">
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="emails" required> <!-- required obriga a preencher o campo -->
+
+  <label for="idade">Idade</label>
+  <input type="number" id="idade" name="idades" required>
+
+  <label for="saida">Saída do Hotel</label>
+  <input type="date" id="saida" name="saidas" required>
+
+  <label for="cpf">CPF</label>
+  <input type="text" id="cpf" name="cpfs" placeholder="000.000.000-00"> <!-- placeholder preenche no campo do formulário, em cinza, como o usuário deverá preencher aquele campo -->
+
+  <label for="senha">Senha</label>
+  <input type="password" id="senha" name="senhas" disabled> <!-- disabled serve para desabilitar o campo -->
+
+  <button>Enviar</button>
+
+  <div class="checkbox">
+    <input type="checkbox" id="termos" name="termos" value="aceito">
+    <label for="termos">Aceito os termos da empresa.</label>  
+  </div>
+  
+  <div class="checkbox">
+    <input type="checkbox" id="anuncio" name="anuncio">
+    <label for="anuncio">Desejo receber anúncios.</label>  
+  </div>
+
+  <p>Entrega:</p>
+  <div class="radio">
+    <input type="radio" id="retirada" name="retirada"> <!-- No radio quando o name é igual, ele só aceita marca 1 caixa -->
+    <label for="retirada">Retirar no local.</label>  
+  </div>
+  <div class="radio">
+    <input type="radio" id="entrega" name="retirada">
+    <label for="entrega">Entrega em casa.</label>  
+  </div>
+
+  <p>Futuro:</p>
+  <div class="radio">
+    <input type="radio" id="retirada2" name="futuro"> <!-- No radio quando o name é igual, ele só aceita marca 1 caixa -->
+    <label for="retirada2">Retirar no local.</label>  
+  </div>
+  <div class="radio">
+    <input type="radio" id="entrega2" name="futuro">
+    <label for="entrega2">Entrega em casa.</label>  
+  </div>
+
+  <label for="parcelas"></label>
+  <select name="parcelas" id="parcelas">
+    <option value="1x">1x de R$ 200</option> <!-- vai enviar o que estiver em value -->
+    <option value="2x">2x de R$ 100</option>
+    <option value="4x">4x de R$ 50</option>
+  </select>
+
+  <label for="mensagem">Mensagem</label>
+  <textarea name="mensagem" id="mensagem" rows="5"></textarea> <!-- rows = linhas. conseguimos manipular tamanho da caixa pelo css -->
+  <button>Enviar</button>
+
+</body>
+</html>

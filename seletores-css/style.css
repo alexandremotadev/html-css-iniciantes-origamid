@@ -1,0 +1,42 @@
+[required] {
+  border: 2px solid tomato;
+}
+
+[href="#contato"] {
+  border: 2px solid greenyellow;
+}
+
+/* para links internos. somente href que tiver # no inicio */
+
+[href^="#"] {
+  background: tomato;
+}
+
+/* para links internos. somente href que tiver .br no final */
+
+[href$=".br"] {
+  background: forestgreen;
+}
+
+/* selecionar apenas h2 filho de section */
+section > h2 {
+  color: tomato;
+}
+
+p {
+  margin: 0px;
+}
+
+article {
+  background: lightgreen;
+  padding: 10px;
+}
+
+/* seleciona todos os P que tenham algum P antes dele */
+p + p {
+  margin-top: 20px;
+}
+
+* {
+  border: 2px solid red;
+}
