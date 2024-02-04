@@ -1,0 +1,21 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#galeria {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* colocar uma imagem do lado da outra */ 
+#galeria ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: grid;
+  /* 3 colunas iguais, por isso uso repeat */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
